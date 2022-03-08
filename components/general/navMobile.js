@@ -30,11 +30,11 @@ class NavMobile extends Component{
     render(){
         return(
             <div>
-                <nav className={styles.navbar} id="klas">
+                <nav className={styles.navbar}>
                     <div className={styles.navInner}>                        
                         <div className={styles.navLogo}>
                             <Link href="/">
-                                <img src="/regnify-blue.png" alt="" />
+                                <img src="/enyata-purple.svg" alt="" />
                             </Link>    
                         </div>
                         
@@ -65,7 +65,6 @@ class NavMobile extends Component{
                                     <Link onClick={() => this.closeMobileNav()} href="/about-us">About us</Link>
                                     <Link onClick={() => this.closeMobileNav()} href="/showcase">Showcase</Link>
                                     <Link onClick={() => this.closeMobileNav()} href="/contact-us">Contact</Link>
-                                    
                                 </div>
                             </div>
                         </div>

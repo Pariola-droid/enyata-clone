@@ -16,7 +16,7 @@ class Footer extends Component{
                    <div className={styles.wrapper}>
                         <div className={styles.brandF}>
                             <div className={styles.logoF}>
-                                <img src="/regnify-white.png" alt=""/>
+                                <img src="/enyata-white.svg" alt=""/>
                             </div>
                             <div className={styles.descF}>
                                 Leverage Regnify's world-class engineering teams to get your  projects up and running quickly.
@@ -60,7 +60,7 @@ class Footer extends Component{
 
                     <div className={styles.foot}>
                         <div className={styles.copy}>
-                            Copyright © Regnify 2021 
+                            Cloned by @ <a href="https://pariola.dev" style={{color: '#f5f5f5', textDecoration: 'underline'}}>Pariola</a> 2022 
                         </div>
 
                         <div className={styles.social}>

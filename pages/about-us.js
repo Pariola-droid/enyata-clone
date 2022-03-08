@@ -16,8 +16,8 @@ class About extends Component{
         return(
             <div>
                 <Head>
-                    <title>Regnify</title>
-                    <meta name="Klas" content="Klas" content="Remote teaching platform for creating engaging online classes anywhere, anytime. Share and monetize your knowledge." />
+                    <title>Enyata - Clone</title>
+                    <meta name="Enyata" content="Enyata" content="A replica of enyata.com website UI - by pariola.dev" />
                     <link rel="icon" href="/klas.svg" />
                 </Head>
 
@@ -25,10 +25,6 @@ class About extends Component{
                 <NavMobile />
                 <main>
                     <Header />
-
-                        
-
-                    
 
                 </main>                
 

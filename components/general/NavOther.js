@@ -12,7 +12,7 @@ class NavOther extends Component{
                     <div className={styles.navInner}>                        
                         <div className={styles.navLogo}>
                             <Link href="/">
-                                <img src="/regnify-blue.png" alt="" />
+                                <img src="/enyata-purple.svg" alt="" />
                             </Link>   
                         </div>
                         

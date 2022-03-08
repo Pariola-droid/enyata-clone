@@ -12,7 +12,7 @@ class Navbar extends Component{
                     <div className={styles.navInner}>                        
                         <div className={styles.navLogo}>
                             <Link href="/">
-                                <img src="/regnify-white.png" alt="" />
+                                <img src="/enyata-white.svg" alt="" />
                             </Link>    
                         </div>
                         

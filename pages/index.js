@@ -23,8 +23,8 @@ class Home extends Component{
         return(
             <div>
                 <Head>
-                    <title>Regnify</title>
-                    <meta name="Klas" content="Klas" content="Remote teaching platform for creating engaging online classes anywhere, anytime. Share and monetize your knowledge." />
+                    <title>Enyata - Clone</title>
+                    <meta name="Enyata" content="Enyata" content="A replica of enyata.com website UI - by pariola.dev." />
                     <link rel="icon" href="/favicon.ico" />
 
                     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
