@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+@import "../styles/variables";
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+::selection{
+  background: #633df6cc;
+  color: white;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 17.38px;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 0;
+  display: none;
+}
+
+a {
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-transition-property: opacity, color, background-color, -webkit-transform, border;
+    -webkit-transition-property: opacity, color, background-color, transform, border;
+    transition-property: opacity, color, background-color, transform, border;
+}
+
+h1 {
+   margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+figure {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+input:-internal-autofill-selected {
+    background-color: rgb(255, 255, 255) !important;
+}
+

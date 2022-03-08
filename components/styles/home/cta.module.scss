@@ -1,0 +1,128 @@
+.cta {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    position: relative;    
+    display: grid;
+    place-items: center;
+
+    & .wrapper {
+        background: #fff;
+        border-radius: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        white-space: nowrap;
+        width: 1050px;
+        padding: 52px 64px;
+        z-index: 10;
+        margin-top: -55px;
+
+        & .content {
+            max-width: 600px;
+
+            & .title {
+                font-size: 35px;
+                font-weight: 600;
+                line-height: 45px;
+                color: #0b132a;
+                margin-bottom: 16px;
+                // max-width: 320px;
+                transition: all .7s 1s;
+            }
+
+            & .desc {
+                font-size: 17px;
+                line-height: 32px;
+                color: #4f5665;
+                transition: all .7s 1.5s;
+            }
+        }
+
+        & .button {
+            a {
+                text-transform: uppercase;
+                box-shadow: rgba(72, 23, 136, 0.35) 0px 30px 30px 0px;
+                cursor: pointer;
+                border-radius: 10px;
+                height: 56px;
+                padding: 0 40px;
+                font-size: 14px;
+                font-weight: 600;
+                white-space: nowrap;
+                transition: all .3s ease-in-out;
+                z-index: 3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #481788;
+                color: #fff;
+                position: relative;
+
+                &::before {
+                    white-space: nowrap;
+                    transition: all .3s ease-in-out;
+                    content: 'WORK WITH US';
+                    background-color: #F0A536;
+                    text-transform: uppercase;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 100%;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                }
+
+                &:hover::before {
+                    width: 100%;
+                    z-index: 5;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:550px) {
+
+.cta {
+
+    & .wrapper {
+        flex-direction: column;
+        width: 90%;
+        margin-top: 150px;
+        white-space: unset;
+
+        & .content {
+            max-width: unset;
+            width: 100%;
+            height: fit-content;   
+            text-align: center;         
+
+            & .title {
+                font-size: 25px;
+                font-weight: 600;
+                line-height: 40px;
+                margin-bottom: 16px;
+            }
+
+            & .desc {
+                font-size: 17px;
+                line-height: 30px;
+            }
+        }
+
+        & .button {
+            margin-top: 40px;
+        }
+    }
+}
+
+
+}

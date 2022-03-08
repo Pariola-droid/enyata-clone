@@ -1,0 +1,244 @@
+#footer {
+    background: #481788;
+    position: relative;
+    height: 485px;
+    padding: 70px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: normal;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #fff;
+
+    & .motifF {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 260px;
+        transition: all 2.5s cubic-bezier(.6,.01,.2,1);
+
+        @media (max-width:550px) {
+            width: 200px;
+        }
+        
+    }
+
+    & .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        width: 100%;
+        max-width: 950px;
+        // background-color: aliceblue;
+        margin: 0 auto;
+
+        & .brandF {
+            width: 460px;
+            transition: all 1.5s 1s;
+
+            & .logoF {
+                
+                &>img {
+                   height: 40px; 
+                }
+                margin-bottom: 25px;
+            }
+            & .descF {
+                max-width: 265px;
+            }
+        }
+
+        & .companyF {
+            min-width: 155px;
+            max-width: 260px;
+            margin-right: 65px;
+            transition: all 1.5s 1.5s;
+
+            & .title {
+               font-size: 18px;
+                font-weight: 400px;
+                line-height: 32px;
+                color: #a187f2;
+                margin-bottom: 16px; 
+                text-transform: capitalize;
+            }
+
+            & .linksF {
+
+                @media (max-width:550px) {
+                    font-size: 95%;
+                }
+
+                & li {
+                    margin-bottom: 10px;
+                    text-transform: capitalize;
+
+                    & a {
+                        display: block;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        & .contactF {
+
+            & .title {
+               font-size: 18px;
+                font-weight: 400px;
+                line-height: 32px;
+                color: #a187f2;
+                margin-bottom: 16px; 
+                text-transform: capitalize;
+            }
+
+            & .contentF {
+
+                @media (max-width:550px) {
+                    font-size: 95%;
+                }
+
+                & a {
+                    color: #ffd166;
+                    display: block;
+                }
+
+                & .footer_phone {
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+    
+    & .foot {
+        margin: 0 auto;
+        margin-top: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        width: 100%;
+        max-width: 950px;
+        // background-color: aliceblue;        
+        opacity: .5;
+
+        & .copy {
+            transition: all 1.5s 2.5s;
+        }
+
+        & .social {
+            width: 227px;
+            height: 20px;
+            display: flex;
+            justify-content: normal;
+            align-items: center;
+
+            & a {
+                display: block;
+                height: 100%;
+
+                &:not(:last-of-type) {
+                    margin-right: 16px;
+                }                
+            }
+        }
+    }
+}
+
+
+
+// Responsive
+
+
+@media (max-width:1100px) {
+
+    
+    
+}
+
+
+@media (max-width:800px) {
+
+    
+    
+}
+
+
+@media (max-width:550px) {
+
+#footer {
+    background: #481788;
+    position: relative;
+    height: fit-content;
+    padding-top: 350px;
+    font-size: 16px;
+    text-align: center;
+
+    & .wrapper {
+        flex-direction: column;
+        position: relative;
+        max-width: unset;
+        width: fit-content;
+        align-items: center;
+        // background-color: aliceblue;
+
+        & .brandF {
+            width: fit-content;
+            margin: 0 auto;
+
+            & .logoF {
+                margin: 0 auto;
+                margin-bottom: 25px;
+            }
+        }
+
+        & .companyF {
+            margin-right: unset;
+            margin-top: 35px;
+        }
+
+        & .contactF {
+            margin-top: 35px;
+        }
+    }
+
+    & .foot {
+        margin: 0 auto;
+        margin-top: 32px;
+        flex-direction: column-reverse;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        max-width: none;
+        // background-color: aliceblue;        
+        opacity: .5;
+
+        & .copy {
+            margin-top: 50px;
+            font-size: 90%;
+        }
+
+        & .social {
+            width: fit-content;
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & a {
+                display: block;
+                height: 100%;
+                margin: 0 16px;
+
+                &:not(:last-of-type) {
+                    margin-right: 0;                    
+                }                
+            }
+        }
+    }
+}
+    
+}

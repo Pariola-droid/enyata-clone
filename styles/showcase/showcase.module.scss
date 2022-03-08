@@ -1,0 +1,67 @@
+@import "../variables";
+
+.showcase_page {
+    background: #f9f9f9;
+    position: relative;
+
+    &::before { // cheatcode no go touch am.
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff8df;
+        position: absolute;
+    }
+}
+
+.projects {
+    height: auto;
+    width: 100%;
+    display: grid;
+    place-items: center;
+
+    @media (max-width:550px) {
+        margin-bottom: 100px;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: auto;
+        display: grid;
+        place-items: center; //2070px
+        // background-color: transparent;
+       
+        .pro_items {
+            padding: 100px 0;
+            width: 100%;
+            height: fit-content;
+            display: grid;
+            place-items: center;
+            position: relative;
+            overflow: hidden;
+
+            @media (max-width:550px) {
+                // padding: 70px 0;
+                padding-bottom: 250px;
+            }
+
+            &:last-child { //3
+                background: #fff8df;
+                padding-bottom: 200px;
+
+                @media (max-width:550px) {
+                    padding-bottom: 250px; 
+                }
+            }
+
+            &:nth-last-child(2) { //2
+                background: #f6f5f9;
+            }
+            &:nth-last-child(3) { //1
+               background: #fff7f3;
+            }
+        } 
+    }
+}
+
